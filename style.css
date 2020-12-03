@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Texturina', serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form{
+    filter: drop-shadow(0 2px 6px #000);
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+}
+.result{
+    background: linear-gradient(45deg,#b03e48, #8d2948);
+    text-align: right;
+    padding: 10px;
+    height: 120px;
+    width: 270px;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.calculator .btn{
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    color: #a30632;
+    height: 70px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 700;
+    background: #1d202a;
+    border: 1px solid #c3bcbc1a;
+}
+.card span:active{
+    background: #a30632;
+    color: snow;
+}
+.card .clear{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.card .equal{
+    grid-row:  5 / 5;
+    grid-column: 3 / 5; 
+}
